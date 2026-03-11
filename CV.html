@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Evalyne Mwikali CV</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<style>
+
+body{
+background:#021827;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin:0;
+padding:0;
+}
+
+/* DOWNLOAD BUTTON */
+
+.download-btn{
+display:block;
+margin:30px auto;
+padding:12px 25px;
+background:#00c853;
+color:white;
+border:none;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.download-btn:hover{
+background:#00a844;
+}
+
+/* CV CONTAINER */
+
+.cv-container{
+width:850px;
+margin:30px auto;
+display:flex;
+background:white;
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
+border-radius:8px;
+overflow:hidden;
+}
+
+/* LEFT SIDE */
+
+.left{
+width:35%;
+background:linear-gradient(180deg,#021827,#05233b);
+color:white;
+padding:30px;
+}
+
+.profile{
+text-align:center;
+margin-bottom:25px;
+}
+
+.profile img{
+width:130px;
+height:130px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+}
+
+/* SECTION TITLES */
+
+.section-title{
+background:white;
+color:#021827;
+text-align:center;
+padding:7px;
+border-radius:20px;
+margin:25px 0 15px 0;
+font-weight:bold;
+font-size:13px;
+letter-spacing:1px;
+}
+
+/* CONTACT */
+
+.contact p{
+font-size:14px;
+margin:8px 0;
+}
+
+/* SKILLS */
+
+.skill{
+display:flex;
+align-items:center;
+justify-content:space-between;
+margin:10px 0;
+font-size:14px;
+}
+
+.dots{
+display:flex;
+gap:4px;
+}
+
+.dot{
+width:8px;
+height:8px;
+background:white;
+border-radius:50%;
+opacity:0.3;
+}
+
+.dot.active{
+opacity:1;
+}
+
+/* LANGUAGES */
+
+.language{
+margin:12px 0;
+font-size:14px;
+}
+
+.bar{
+width:100%;
+height:6px;
+background:#3a556d;
+border-radius:10px;
+margin-top:4px;
+}
+
+.level{
+height:6px;
+background:#00c853;
+border-radius:10px;
+}
+
+/* RIGHT SIDE */
+
+.right{
+width:65%;
+}
+
+.header{
+background:#173a5e;
+color:white;
+padding:35px;
+}
+
+.header h1{
+margin:0;
+font-size:32px;
+letter-spacing:1px;
+}
+
+.header h3{
+margin-top:6px;
+font-weight:normal;
+font-size:16px;
+}
+
+.content{
+padding:30px;
+}
+
+.content h3{
+background:#021827;
+color:white;
+display:inline-block;
+padding:6px 15px;
+border-radius:20px;
+font-size:13px;
+letter-spacing:1px;
+margin-top:25px;
+}
+
+.content p{
+font-size:14px;
+line-height:1.7;
+color:#333;
+}
+
+ul{
+font-size:14px;
+padding-left:20px;
+}
+
+li{
+margin:6px 0;
+}
+
+/* PRINT */
+
+@media print{
+
+.download-btn{
+display:none;
+}
+
+body{
+background:white;
+}
+
+.cv-container{
+box-shadow:none;
+margin:0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<button class="download-btn" onclick="downloadCV()">Download CV</button>
+
+<div id="cv">
+
+<div class="cv-container">
+
+<!-- LEFT SIDE -->
+
+<div class="left">
+
+<div class="profile">
+<img src="../images/evalyne.jpg">
+</div>
+
+<div class="section-title">CONTACT</div>
+
+<div class="contact">
+<p>Nairobi, Kenya</p>
+<p>+254 745580013</p>
+<p>evalynemwikali615@gmail.com</p>
+<p>Portfolio: yourportfolio.com</p>
+</div>
+
+<div class="section-title">SKILLS</div>
+
+<div class="skill">
+<span>Web Development</span>
+<div class="dots">
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>Microsoft Word</span>
+<div class="dots">
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>Microsoft Excel</span>
+<div class="dots">
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>Computer Troubleshooting</span>
+<div class="dots">
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>Digital Marketing</span>
+<div class="dots">
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+</div>
+</div>
+
+<div class="section-title">LANGUAGES</div>
+
+<div class="language">
+English
+<div class="bar">
+<div class="level" style="width:95%"></div>
+</div>
+</div>
+
+<div class="language">
+Kiswahili
+<div class="bar">
+<div class="level" style="width:90%"></div>
+</div>
+</div>
+
+</div>
+
+<!-- RIGHT SIDE -->
+
+<div class="right">
+
+<div class="header">
+<h1>EVALYNE MWIKALI MWANGANGI</h1>
+<h3>ICT STUDENT</h3>
+</div>
+
+<div class="content">
+
+<h3>PROFESSIONAL SUMMARY</h3>
+
+<p>
+Motivated ICT student with strong skills in computer applications,
+web development, and digital technologies. Passionate about using
+technology to solve problems, improve business processes, and
+support digital transformation in organizations.
+</p>
+
+<h3>EDUCATION</h3>
+
+<p><b>Diploma in Information Communication Technology</b></p>
+<p>Kigumo Technical Vocational College</p>
+<p>Expected Graduation: 2026</p>
+
+<h3>WORK EXPERIENCE</h3>
+
+<p><b>ICT Support Intern – Lumina Tech Solutions</b></p>
+
+<ul>
+<li>Provided basic computer technical support</li>
+<li>Assisted in installing and maintaining computer systems</li>
+<li>Helped staff use Microsoft Office applications</li>
+<li>Maintained digital records and office data</li>
+</ul>
+
+<h3>CERTIFICATIONS</h3>
+
+<ul>
+<li>Certificate in Information Communication Technology</li>
+<li>Computer Applications Certificate</li>
+<li>Digital Skills Training</li>
+</ul>
+
+<h3>REFEREES</h3>
+
+<p>Available upon request</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function downloadCV(){
+
+const element = document.getElementById("cv");
+
+html2pdf(element,{
+margin:0,
+filename:'Evalyne_Mwikali_CV.pdf',
+image:{ type:'jpeg', quality:1 },
+html2canvas:{ scale:2 },
+jsPDF:{ unit:'mm', format:'a4', orientation:'portrait' }
+});
+
+}
+
+</script>
+
+</body>
+</html>

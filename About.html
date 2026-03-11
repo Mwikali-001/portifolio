@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About | John Macharia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css_styling/about.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- External CSS -->
+<link rel="stylesheet" href="css_styling/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+<nav class="navbar">
+1
+<!-- Hamburger -->
+<div class="menu-toggle" id="menu-toggle">
+<i class="fas fa-bars"></i>
+</div>
+
+<!-- Logo -->
+<div class="logo">Portfolio.</div>
+
+<!-- Navigation -->
+<ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="About.html">About</a></li>
+<li><a href="Skills.html">Skills</a></li>
+<li><a href="Contact.html">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<!-- ABOUT SECTION -->
+<section class="about-page">
+
+  <div class="about-overlay">
+
+    <div class="about-content">
+
+      <img src="images/evalyne.jpg" class="profile-img" alt="Evalyne Mwikali">
+
+      <h1>About Me</h1>
+
+      <p>
+        I am <strong>Evalyne Mwikali</strong> an enthusiastic ICT student passionate about 
+        technology, entrepreneurship and digital innovation. I enjoy exploring how 
+        information technology can be used to solve real-world problems and create 
+        opportunities for businesses and communities.
+      </p>
+
+      <p>
+        My studies in ICT have equipped me with skills in web technologies, 
+        digital marketing tools, data analysis and business systems. 
+        I am particularly interested in combining technology with 
+        entrepreneurship and financial analysis to develop smart 
+        business solutions.
+      </p>
+
+      <p>
+        My long-term goal is to become a successful tech-driven entrepreneur 
+        and financial consultant who uses ICT solutions to help businesses 
+        grow, improve efficiency and adapt to the digital economy.
+      </p>
+
+      <div class="about-details">
+
+        <!-- EDUCATION -->
+        <div>
+          <h3>Education</h3>
+          <p>Diploma in Information Communication Technology (ICT)</p>
+          <p>Kigumo Technical (2023 - Present)</p>
+        </div>
+
+        <!-- SKILLS -->
+        <div>
+          <h3>Key Skills</h3>
+          <ul>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Digital Marketing</li>
+            <li>Basic Data Analysis</li>
+            <li>Business & Financial Planning</li>
+            <li>Problem Solving</li>
+            <li>Communication Skills</li>
+            <li>Networking, cabling and Troubleshooting</li>
+          </ul>
+        </div>
+
+        <!-- SOCIAL LINKS -->
+        <div class="social-links">
+          <h3>Connect With Me</h3>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/Mwikali-001"><i class="fab fa-github"></i></a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<script>
+
+const toggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+toggle.addEventListener("click", () => {
+
+navLinks.classList.toggle("active");
+
+});
+
+</script>
+
+</body>
+</html>
